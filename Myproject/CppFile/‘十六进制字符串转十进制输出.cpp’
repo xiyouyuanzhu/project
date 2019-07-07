@@ -1,0 +1,98 @@
+
+//写出一个程序，接受一个十六进制的数值字符串，输出该数值的十进制字符串。（多组同时输入 ）
+
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+
+void newline()
+{
+	char c;
+	do
+	{
+		c = getchar();
+	} while (c != '\n');
+}
+int getnumber(char c)
+{
+	int pnum = 0;
+	if (c >= '0' && c <= '9')
+	{
+		pnum = c - '0';
+	}
+	else
+	{
+		switch (c)
+		{
+		case 'A':
+			pnum = 10;
+			break;
+		case 'B':
+			pnum = 11;
+			break;
+		case 'C':
+			pnum = 12;
+			break;
+		case 'D':
+			pnum = 13;
+			break;
+		case 'E':
+			pnum = 14;
+			break;
+		case 'F':
+			pnum = 15;
+			break;
+		default:
+			break;
+		}
+	}
+	return pnum;
+}
+
+int main()
+{
+
+	string str;
+
+	while (getline(cin, str))
+	{
+		int target = 0;
+		vector<int>rec;
+		string strpro = "";
+		for (int i = 0; i<str.size(); i++)
+		{
+			if (str[i] == 'x')
+			{
+				for (int j = i + 1; j<str.size(); j++)
+				{
+					strpro += str[j];
+				}
+				break;
+			}
+		}
+		int num = 0;
+		for (int j = strpro.size() - 1; j >= 0; j--)
+		{
+			int flg = 1;
+			for (int k = 0; k<num; k++)
+			{
+				flg *= 16;
+			}
+			int pnum = getnumber(strpro[j]);
+			//pnum = strpro[i]-'\0' ; 
+			int tmpnumber = 0;
+			tmpnumber = flg *pnum;
+			rec.push_back(tmpnumber);
+			num += 1;
+		}
+		for (int i = 0; i<rec.size(); i++)
+		{
+			target += rec[i];
+		}
+		cout << target << endl;
+	}
+}
+
+
+
