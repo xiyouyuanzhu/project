@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0a61fd-513e-4aa5-846a-0deef2673745" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Myproject/自动化模块pexpect 库英文注释分析.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myproject/Auto_SSH/Paramiko_Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myproject/Auto_SSH/auto_ssh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myproject/Auto_SSH/auto_ssh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/远程连接ssh.md" beforeDir="false" afterPath="$PROJECT_DIR$/远程连接ssh.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Myproject/Auto_SSH/auto_ssh.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="92" column="16" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+            <state relative-caret-position="242">
+              <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -28,43 +27,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/pexpect/expect.py">
+        <entry file="file://$PROJECT_DIR$/Myproject/Auto_SSH/Paramiko_Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/pexpect/spawnbase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="340" selection-start-line="340" selection-end-line="340" />
+            <state relative-caret-position="154">
+              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/pexpect/pty_spawn.py">
+        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/paramiko/auth_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="275" selection-start-line="275" selection-end-line="275" />
+            <state relative-caret-position="164">
+              <caret line="249" selection-start-line="249" selection-end-line="249" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myproject/自动化模块pexpect 库英文注释分析.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="560">
-                <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
+        <entry file="file:///usr/lib/python3.6/ntpath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="325" column="28" selection-start-line="325" selection-start-column="28" selection-end-line="325" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/paramiko/client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="445" selection-start-line="445" selection-end-line="445" />
             </state>
           </provider>
         </entry>
@@ -94,6 +90,7 @@
         <option value="$PROJECT_DIR$/Myproject/PyFile/Op_file.py" />
         <option value="$PROJECT_DIR$/远程连接ssh.md" />
         <option value="$PROJECT_DIR$/Myproject/自动化模块pexpect 库英文注释分析.md" />
+        <option value="$PROJECT_DIR$/Myproject/Auto_SSH/Paramiko_Test.py" />
         <option value="$PROJECT_DIR$/Myproject/Auto_SSH/auto_ssh.py" />
       </list>
     </option>
@@ -109,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,6 +128,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,6 +191,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Paramiko_Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MyGIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Myproject/Auto_SSH" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Myproject/Auto_SSH/Paramiko_Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="auto_ssh" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyGIT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,6 +236,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.auto_ssh" />
+        <item itemvalue="Python.Paramiko_Test" />
         <item itemvalue="Python.Op_file" />
         <item itemvalue="Python.OpTcpData" />
       </list>
@@ -245,7 +264,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20731707" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41574278" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -288,23 +307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Myproject/自动化模块pexpect 库英文注释分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="560">
-            <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/pexpect/pty_spawn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="275" selection-start-line="275" selection-end-line="275" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/远程连接ssh.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -322,6 +324,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/pexpect/pty_spawn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="275" selection-start-line="275" selection-end-line="275" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myproject/自动化模块pexpect 库英文注释分析.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="560">
+            <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/pexpect/spawnbase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -332,10 +351,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python3.6/ntpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="325" column="28" selection-start-line="325" selection-start-column="28" selection-end-line="325" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/paramiko/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="445" selection-start-line="445" selection-end-line="445" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/paramiko/auth_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myproject/Auto_SSH/Paramiko_Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Myproject/Auto_SSH/auto_ssh.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="92" column="16" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+        <state relative-caret-position="242">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

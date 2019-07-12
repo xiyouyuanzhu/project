@@ -89,13 +89,6 @@ def connect2(cmd,pwd):
                 print('enter psw again')
                 print(child.before.decode('utf-8'))
                 child.sendline('{}\n'.format(pwd))
-            elif:
-
-
-
-
-
-
 
         print(child.before.decode('utf-8'))
     child.sendline('pip install requests')
@@ -110,7 +103,19 @@ def t1():
     name = 'zhuzi166'
     host = '192.168.136.129'
     psw = 'Woshiyuanzhu'
-    connect2('ssh  {}@{}'.format(name, host), psw)
+    #connect2('ssh  {}@{}'.format(name, host), psw)
+    child  =pexpect.spawn('ssh {}@{}'.format(name,host))
+    i = child.expect(['Welcome','.*password.*','.*continue.?',pexpect.EOF,pexpect.TIMEOUT])
+    if i ==0:
+        print(child.after.decode('utf-8'))
+    elif i==1:
+        child.sendline('Woshiyuanzhu\n')
+        index =child.expect('Welcome.*')
+        print(child.after.decode('utf-8'))
+        child.sendline('xhost')
+        index = child.expect('')
+    else:
+        print(child.before.decode('utf-8'))
 
 
 def t2():
