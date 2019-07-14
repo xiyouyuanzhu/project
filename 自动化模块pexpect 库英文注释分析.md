@@ -9,7 +9,7 @@
       根据list 中的不同匹配项来请求不同的任务 。  
       特别的，pexpect.EOF(执行完毕)  非常有用，可以检测到指令是否执行完毕 。  
       例如：  
-      **  TIPS   **  
+  **TIPS**  
       1.def test:  
       2.      child = pexpect.spawn('{}\n'.format('pip3 install pinda'))  
       3.      i = child.expect(['.*\$',pexpect.EOF,pexpect.TIMEOUT],timeout=-1)  
