@@ -15,3 +15,4 @@
     将id_rsa.pub 内容追加到 /home/usr/.ssh/authorized_keys 文件内,     
     若文件没有则新建文件直接将id_rsa.pub内容复制到authorized_keys即可
      
+**【代码传送门】(https://github.com/xiyouyuanzhu/project/blob/master/Myproject/Auto_SSH/auto_ssh.py）**
