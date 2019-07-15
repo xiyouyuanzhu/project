@@ -13,4 +13,12 @@
        （3）:PasswordAuthentication yes #该项要求允许密码输入
 
     具体paramiko 使用密钥SSH链接 代码实现见
-    []()
+    (案例传送门)[https://github.com/xiyouyuanzhu/project/blob/master/Myproject/Auto_SSH/SSHKeyConnect.py]
+#   补充一些常用的SSH命令，包括查看运行状态 ，重启，开机启动等。
+    1.  查看运行状态：systemctl status sshd.service
+
+    2.  启动服务：systemctl start sshd.service
+
+    3.  重启服务：systemctl restart sshd.service
+
+    4.  开机自启：systemctl enable sshd.service
