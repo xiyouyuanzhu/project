@@ -8,13 +8,14 @@ def t1():
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     ssh.connect(hostname=host,username=name,password=pwd)
-    stdin,stdout ,stderr = ssh.exec_command('xhost +')
+    stdin,stdout ,stderr = ssh.exec_command('export DISPLAY=:0 && xhost +')
     cmdresult = stdout.read().decode('utf-8') + stderr.read().decode('utf-8')
     print(cmdresult)
     stdin,stdout ,stderr = ssh.exec_command('firefox')
     cmdresult = stdout.read().decode('utf-8')+stderr.read().decode('utf-8')
     print(cmdresult)
     print(cmdresult)
-
+def t2():
+    print('hello world')
 if __name__ == '__main__':
-    t2()
+    t1()
