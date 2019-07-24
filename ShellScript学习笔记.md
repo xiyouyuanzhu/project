@@ -64,6 +64,13 @@ elif []  ; then 
 else 
 
   语句
+## 7  Shell不等号写法
+    (1) 大于 -gt (greater than)
+    (2) 小于 -lt (less than)
+    (3)大于或等于 -ge (greater than or equal)
+    (4)小于或等于 -le (less than or equal)
+    (5)不相等 -ne （not equal）
+    (6)相等 -eq （equal）
 
 
 
