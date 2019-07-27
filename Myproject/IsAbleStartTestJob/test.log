@@ -10,3 +10,7 @@
 总用量 8
 -rw-r--r-- 1 zhuzi166 zhuzi166 378 Jul 17 05:41 Isable.py
 -rw-r--r-- 1 zhuzi166 zhuzi166 390 Jul 17 05:41 test.log
+/etc/profile: 行 30: Isable.py: 未找到命令
+/etc/profile: 行 31: Isable.py: 未找到命令
+/etc/profile: 行 30: Isable.py: 未找到命令
+/etc/profile: 行 31: Isable.py: 未找到命令
