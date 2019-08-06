@@ -111,12 +111,33 @@ class ConnectAction(argparse.Action):
         child=pexpect.spawn('/bin/bash',['-c','ssh zhuzi166@127.0.0.1 '],encoding='utf-8')
         child.expect(pexpect.EOF)
         print(child.before)
+class FindAction(argparse.Action):
+
+    # def __init__(self, option_strings, dest, nargs=None, help=None, **kwargs):
+    #     super(killAction, self).__init__(option_strings, dest, **kwargs)
+
+    def __init__(self,option_strings,dest,nargs=None ,**kwargs):
+        super(FindAction,self).__init__(option_strings,dest,**kwargs)
+        # super(FooAction, self).__init__(option_strings, dest, **kwargs)
+
+    #
+    # def __call__(self, parser, namespace, values, option_string=None):
+    #     print('values=',values)
+    #     print('namespace={}\n values={}\n option_string={}'.format(namespace, values, option_string))
+    #     setattr(namespace, self.dest, values)
+
+
+    def __call__(self, parser, namespace, values, option_string=None):
+        child=pexpect.spawn('/bin/bash',['-c','grep -rn {} '.format(values)],encoding='utf-8')
+        child.expect(pexpect.EOF)
+        print(child.before)
 
 
 def TinyTool():
     parser = argparse.ArgumentParser(description='Mytool')
     parser.add_argument('-s', '--start', action=killAction,help='-s  funcname ---->-s  firefox')
     parser.add_argument('-c', '--connect', action=ConnectAction,help='-c  funcname ---->connect the target PC',nargs='?')
+    parser.add_argument('-f', '--find', action=FindAction,help='-f  funcname ---->find the file which contain the string  and pring the line',nargs='?')
     args = parser.parse_args()
     print('args=', args)
 
