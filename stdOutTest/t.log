@@ -1,0 +1,20 @@
+Runing test 0
+Runing test 1
+Runing test 2
+Runing test 3
+Runing test 4
+Runing test 5
+Runing test 6
+Runing test 7
+Runing test 8
+Runing test 9
+Traceback (most recent call last):
+  File "/home/zhuzi166/workspace/project/stdOutTest/demo1.py", line 36, in <module>
+    t1()
+  File "/home/zhuzi166/workspace/project/stdOutTest/demo1.py", line 24, in t1
+    p.setDaemon(True)
+  File "/usr/lib/python3.6/threading.py", line 1148, in setDaemon
+    self.daemon = daemonic
+  File "/usr/lib/python3.6/threading.py", line 1141, in daemon
+    raise RuntimeError("cannot set daemon status of active thread")
+RuntimeError: cannot set daemon status of active thread
