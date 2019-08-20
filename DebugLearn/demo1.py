@@ -22,7 +22,7 @@ def test():
     data =subprocess.Popen(args='env',shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,encoding='utf-8')
     outbuf=data.stdout.read()
 
-    logger.debug(outbuf)
+
 
 
 
